@@ -12,6 +12,11 @@
    a. gauge install html-report
    b. gauge install java
 
+## Inštalácia maven
+1. https://maven.apache.org/download.cgi
+2. Rozbaliť do miesta kde chcete mať nainištalovaný Maven
+3. Pridať do premenných prostredia: rovnako ako Gauge tak cestu k mvn
+
 ## Inštalácia IJ
 1. https://www.jetbrains.com/idea/download/#section=windows
 2. Stiahnuť community
@@ -24,9 +29,16 @@
 4. Koliečko -> Install plugins from disk -> Vyhľadať ten stiahnutý plugin
 5. Nainštalovať
 
+## Nastavenie Chrome premenných
+1. https://chromedriver.chromium.org/downloads
+2. Stiahnuť vašu verziu chrome driveru (rovnaká ako máte chrome)
+3. Rozbaliť do miesta kde chcete mať chrome driver
+4. Nastaviť premenné prostredia aj pre chromedriver aj pre miesto kde máte uložený chrome.exe
+
 ## Stiahnutie projektu
-0. Ak nemáte git treba stiahnuť a nainštalovať https://git-scm.com/
-1.
+0a. Ak nemáte git treba stiahnuť a nainštalovať https://git-scm.com/
+1.Otvoriť CMD
+2.git clone https://github.com/SokolikMatej/AT.git C:\<miesto kde chcete mat projekt>
 
 
 ## About this template
