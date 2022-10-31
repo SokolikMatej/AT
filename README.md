@@ -1,7 +1,7 @@
 ## Inštalácia Gauge
 1. https://docs.gauge.org/getting_started/installing-gauge.html?os=windows&language=javascript&ide=vscode
 2. Pridať do premenných prostredia:
-* Tento počítač (Pravím)
+* Tento počítač (Pravým)
 * Vlastnosti
 * Rozšírené nastavenie systému
 * Premenné prostredia
