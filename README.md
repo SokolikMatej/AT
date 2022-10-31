@@ -1,13 +1,13 @@
 ## Inštalácia Gauge
 1. https://docs.gauge.org/getting_started/installing-gauge.html?os=windows&language=javascript&ide=vscode
 2. Pridať do premenných prostredia:
-   a. Tento počítač (Pravím)
-   b. Vlastnosti
-   c. Rozšírené nastavenie systému
-   d. Premenné prostredia
-   e. Rozkliknúť Path
-   f. Nové
-   g. Prehľadávať -> C:\Program Files\Gauge\bin
+* Tento počítač (Pravím)
+* Vlastnosti
+* Rozšírené nastavenie systému
+* Premenné prostredia
+* Rozkliknúť Path
+* Nové
+* Prehľadávať -> C:\Program Files\Gauge\bin
 3. Otvoriť cmd -> Použiť príkady:
    a. gauge install html-report
    b. gauge install java
