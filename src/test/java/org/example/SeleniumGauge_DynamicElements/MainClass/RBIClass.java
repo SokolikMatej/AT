@@ -1,9 +1,11 @@
 package org.example.SeleniumGauge_DynamicElements.MainClass;
 
 import com.thoughtworks.gauge.datastore.SpecDataStore;
+import org.example.GaugeKing.WebElementWithXpath;
 import org.example.SeleniumGauge_DynamicElements.StaticVariables.CommonXpathFactory;
 import org.example.SeleniumGauge_DynamicElements.StaticVariables.SpecVariables;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -23,6 +25,8 @@ public class RBIClass {
 
     public void clickMainMenu() throws Exception {
         try {
+            waitForLoading();
+
             this.wait.until(ExpectedConditions.elementToBeClickable(By.xpath(CommonXpathFactory.getMainMenuXpath())));
             this.driver.findElement(By.xpath(CommonXpathFactory.getMainMenuXpath())).click();
         } catch (Exception e) {
@@ -37,6 +41,11 @@ public class RBIClass {
         } catch (Exception e) {
             throw new Exception(e.getMessage() + "\n Error while clicking menu item");
         }
+    }
+
+    private void waitForLoading() {
+//        this.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(CommonXpathFactory.foxLoading())));
+        this.wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(CommonXpathFactory.foxLoading())));
     }
 
     public void clickNavigationMenuItem(String navigationActionName) throws Exception {
@@ -73,11 +82,15 @@ public class RBIClass {
 
     public void clickButton(String buttonText) throws Exception {
         try {
-            this.wait.until(ExpectedConditions.elementToBeClickable(By.xpath(CommonXpathFactory.getButtonXpath(buttonText))));
-            this.driver.findElement(By.xpath(CommonXpathFactory.getButtonXpath(buttonText))).click();
+            click(this.driver.findElement(By.xpath(CommonXpathFactory.getButtonXpath(buttonText))));
         } catch (Exception e) {
             throw new Exception(e.getMessage() + "\n Error while clicking button with text: " + buttonText);
 
         }
+    }
+
+    public void click(WebElement element) {
+        this.wait.until(ExpectedConditions.elementToBeClickable(element));
+        element.click();
     }
 }

@@ -1,5 +1,6 @@
 package org.example.GaugeKing;
 
+import com.thoughtworks.gauge.Step;
 import com.thoughtworks.gauge.datastore.SpecDataStore;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -102,7 +103,7 @@ public class uc_KontaktneUdajeAdresa extends KingTest {
         }
     }
 
-
+    @Step("")
     public void vytvorSlovenskuAdresu() throws IllegalAccessException {
         try {
 //            setText("partneriPrehladFilter.PartnerId", this.Partner_id);

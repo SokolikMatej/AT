@@ -9,7 +9,6 @@ public class uc_ChangeGoal extends RBIClass {
         try {
             clickMainMenu();
             clickMainMenuItem("Sales");
-            delay(5);
             clickNavigationMenuItem("Home");
             clickEditField("Goal");
             setText("EUR", "3600");

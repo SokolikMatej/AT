@@ -7,9 +7,19 @@ public class tc_ChangeGoal {
     uc_ChangeGoal changeGoal = new uc_ChangeGoal();
 
 
-    @Step("Sales-ChangeGoal")
-    public void editGoal() throws Exception {
+    @Step("Sales-ChangeGoal <Variant>")
+    public void editGoal(Enum Variant) throws Exception {
         changeGoal.ChangeGoal();
+    }
+
+    @Step("Sales-ChangeGoal-Navigate")
+    public void getGoalEntryPoint() {
+
+    }
+
+    @Step("Sales-ChangeGoal-GetData")
+    public void getGoalData() {
+
     }
 
 }

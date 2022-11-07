@@ -19,14 +19,12 @@ public class tc_KontaktneUdajeAdresa {
     @ContinueOnFailure
     @Step("PAR-KontaktneUdajeAdresa-UpravAdresu")
     public void upravAdresu() throws Exception {
-
         partnerAdresa.entryPoint();
         partnerAdresa.getData("Uprav");
         partnerAdresa.upravAdresu();
         partnerAdresa.getPartialCheck("Uprava");
         partnerAdresa.getFinalCheck();
 //        partnerAdresa.nulujPremenne();
-
     }
 
     @ContinueOnFailure
